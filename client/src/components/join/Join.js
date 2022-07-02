@@ -8,8 +8,8 @@ const Join =()=>{
         <div className="joinOuterContainer">
             <div className="joinInnerContainer">
                 <h1 className="heading">Join</h1>
-                <div><input placeholder="Enter Your name" className="joinInput" type="text" onChange={(e)=>setname(e.target.value)} /></div>
-                <div><input placeholder="Enter room no" className="joinInput mt-20" type="text" onChange={(e)=>setroom(e.target.value)} /></div>
+                <div><input placeholder="Enter Your Name" className="joinInput" type="text" onChange={(e)=>setname(e.target.value)} /></div>
+                <div><input placeholder="Enter Room No." className="joinInput mt-20" type="text" onChange={(e)=>setroom(e.target.value)} /></div>
                 <Link onClick={(event)=>(!name || !room) ? event.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
                     <button className="button mt-20" type="submit">Sign In</button>
                 </Link>
